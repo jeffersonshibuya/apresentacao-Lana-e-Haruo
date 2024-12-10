@@ -33,10 +33,10 @@ export const HaruoModal = () => {
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "180deg" }}
             onClick={(e) => e.stopPropagation()}
-            className={`font-shootingStar   cursor-default relative overflow-hidden`}
+            className={`font-shootingStar w-auto h-auto cursor-default relative `}
           >
-            <BackgroundBeamsWithCollision className="bg-gradient-to-br text-white p-6 w-full max-w-4xl from-blue-800 to-white/80 rounded-lg shadow-xl">
-              <div className="w-full text-blue-900">
+            <BackgroundBeamsWithCollision className="bg-gradient-to-br text-white p-6 w-full h-full max-w-4xl from-blue-800 to-white/80 rounded-lg shadow-xl">
+              <div className="w-full h-full text-blue-900">
                 <div className="flex justify-center items-center">
                   {images.map((image, idx) => (
                     <motion.div
@@ -61,12 +61,12 @@ export const HaruoModal = () => {
                         alt="haruo images"
                         width="500"
                         height="500"
-                        className="rounded-lg h-28 w-28 md:h-40 md:w-40 object-cover flex-shrink-0"
+                        className="rounded-lg h-16 w-16 lg:h-28 lgL:w-28 md:h-40 md:w-40 object-cover flex-shrink-0"
                       />
                     </motion.div>
                   ))}
                 </div>
-                <div className="font-atop  py-10 flex flex-col flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-lg mx-auto">
+                <div className="font-atop py-10 flex flex-col flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-lg mx-auto">
                   <h1 className="text-4xl"> Rafael Haruo Shibuya</h1>
                   <div className="flex items-center justify-center gap-2">
                     <IconNumber className=" size-5" />

@@ -76,7 +76,26 @@ const FloatingDockMobile = ({
                   key={item.title}
                   className="h-16 w-16 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
-                  <div className="h-4 w-4">{item.icon}</div>
+                  {item.title === "Haruo" ? (
+                    <Image
+                      width={20}
+                      height={20}
+                      src={"/haruo-avatar.png"}
+                      alt="haruo-avatar"
+                      className="rounded-full object-contain"
+                    />
+                  ) : item.title === "Lana" ? (
+                    <Image
+                      width={20}
+                      height={20}
+                      src={"/lana.png"}
+                      alt="lana"
+                      className="rounded-full object-contain"
+                    />
+                  ) : (
+                    <div className="h-4 w-4">{item.icon}</div>
+                  )}
+                  {/* <div className="h-4 w-4">{item.icon}</div> */}
                 </button>
               </motion.div>
             ))}

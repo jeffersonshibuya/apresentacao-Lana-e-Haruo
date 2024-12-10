@@ -33,9 +33,9 @@ export const LanaModal = () => {
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "180deg" }}
             onClick={(e) => e.stopPropagation()}
-            className={`font-shootingStar   cursor-default relative overflow-hidden`}
+            className={`font-shootingStar  w-auto h-auto cursor-default relative`}
           >
-            <BackgroundBeamsWithCollision className="bg-gradient-to-br text-white p-6 w-full max-w-4xl from-pink-800 to-white/80 rounded-lg shadow-xl">
+            <BackgroundBeamsWithCollision className="bg-gradient-to-br text-white p-6 w-full h-full max-w-4xl from-pink-800 to-white/80 rounded-lg shadow-xl">
               <div className="w-full text-pink-900">
                 <div className="flex justify-center items-center">
                   {images.map((image, idx) => (
@@ -61,7 +61,7 @@ export const LanaModal = () => {
                         alt="haruo images"
                         width="500"
                         height="500"
-                        className="rounded-lg h-28 w-28 md:h-40 md:w-40 object-cover flex-shrink-0"
+                        className="rounded-lg w-16 h-16 lg:h-28 lg:w-28 md:h-40 md:w-40 object-cover flex-shrink-0"
                       />
                     </motion.div>
                   ))}

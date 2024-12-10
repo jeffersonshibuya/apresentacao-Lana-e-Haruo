@@ -27,17 +27,19 @@ export const MusicModal = () => {
             onClick={(e) => e.stopPropagation()}
             className={`font-shootingStar bg-gradient-to-br from-violet-600/50 to-indigo-600 text-white p-6 rounded-lg w-full max-w-2xl shadow-xl cursor-default relative overflow-hidden`}
           >
-            <Music className="text-white/10 rotate-45 w-[250px] h-[250px] absolute z-50 -top-24 -left-14" />
+            <Music className="text-white/10 rotate-45 w-[250px] h-[250px] absolute z-50 -top-24 -left-24" />
             <Drum className="text-white/10 rotate-45 w-[250px] h-[250px] absolute z-50 -bottom-16 -right-14" />
-            <HeadphonesIcon className="text-white/10 -rotate-45 w-[250px] h-[250px] absolute z-50 top-5 right-16" />
+            <HeadphonesIcon className="text-white/10 -rotate-45 w-[250px] h-[250px] absolute z-50 hidden lg:visible lg:top-10 lg:right-16" />
             <div className="relative z-10">
               <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto">
                 <Music />
               </div>
               <div className="my-10 bg-gradient-to-r text-transparent from-pink-400  via-white to-green-400 bg-clip-text">
-                <h3 className=" text-center mb-2 text-7xl p-3">MÚSICAS</h3>
-                <div className="text-center mb-6 flex-col sapce-y-2  text-4xl ">
-                  <ul className="text-6xl space-y-6 mt-12 flex flex-col items-start">
+                <h3 className=" text-center mb-2 text-2xl lg:text-7xl p-3">
+                  MÚSICAS
+                </h3>
+                <div className="text-center mb-6 flex-col sapce-y-2 ">
+                  <ul className="lg:text-6xl text-2xl space-y-6 mt-12 flex flex-col items-start">
                     <li> - Macarena </li>
                     <li> - Opaganastar </li>
                     <li> - Mi Mi Mi </li>

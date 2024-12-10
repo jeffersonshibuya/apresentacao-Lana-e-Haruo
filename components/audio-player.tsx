@@ -33,7 +33,7 @@ const AudioPlayer = () => {
   }, []);
 
   return (
-    <div className="absolute bottom-0 left-0 z-50 w-full text-center  bg-white/50">
+    <div className="absolute bottom-0 left-0 z-40 w-full text-center  bg-white/50">
       <audio ref={audioRef} src="/papaya.mp4" preload="auto" />
       <div className="flex items-center gap-4 justify-center">
         {isPlaying ? (

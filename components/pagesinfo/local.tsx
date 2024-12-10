@@ -33,7 +33,7 @@ export const LocalModal = () => {
                 src={`/varanda.png`}
                 alt="varanda"
                 fill
-                className="object-fill"
+                className="object-fill aspect-auto"
               />
             </div>
             <AlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
@@ -42,9 +42,11 @@ export const LocalModal = () => {
                 <MapIcon />
               </div>
               <div className="my-10 bg-gradient-to-r text-transparent from-pink-400  via-white to-green-400 bg-clip-text">
-                <h3 className=" text-center mb-2 text-7xl p-3">LOCAL</h3>
-                <div className="text-center mb-6 flex-col sapce-y-2  text-4xl ">
-                  <p className="flex flex-col text-6xl space-y-3 mt-12">
+                <h3 className=" text-center mb-2 text-4xl lg:text-7xl p-3">
+                  LOCAL
+                </h3>
+                <div className="text-center mb-6 flex-col sapce-y-2">
+                  <p className="flex flex-col text-4xl lgtext-6xl space-y-3 mt-12">
                     <span>Casa da Vovó </span> <br />
                     <span>Palco Varanda</span>
                   </p>
