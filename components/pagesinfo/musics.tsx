@@ -1,9 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Drum, Headphones, HeadphonesIcon, Music } from "lucide-react";
+import { Drum, HeadphonesIcon, Music } from "lucide-react";
 import { useMusics } from "@/hooks/use-musics";
-import Image from "next/image";
 // import Ballon from "next/font/local";
 
 // const ballon = Ballon({ src: "../../app/fonts/ballon.ttf" });
