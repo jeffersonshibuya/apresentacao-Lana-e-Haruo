@@ -1,12 +1,6 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-  IconMusic,
-  IconMap,
-  IconCalendar,
-  IconUser,
-  IconUsersGroup,
-} from "@tabler/icons-react";
+import { IconMusic, IconMap, IconUser } from "@tabler/icons-react";
 import { useLocal } from "@/hooks/use-local";
 import { Roboto } from "next/font/google";
 import { useHaruo } from "@/hooks/use-haruo";
@@ -70,7 +64,7 @@ export function FloatingDockMenu() {
   ];
   return (
     <div
-      className={`${roboto.className} absolute bottom-10 flex items-center justify-center w-full z-40`}
+      className={`${roboto.className} absolute bottom-16 flex items-center justify-center w-full z-40`}
     >
       <FloatingDock mobileClassName="translate-y-20" items={links} />
     </div>

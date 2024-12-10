@@ -13,6 +13,7 @@ export function Header() {
     <div className={`${butterfly_kids.className}`}>
       <BackgroundGradientAnimation>
         <ShiftingCountdown />
+
         <div
           className={`font-atop absolute z-40 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl`}
         >

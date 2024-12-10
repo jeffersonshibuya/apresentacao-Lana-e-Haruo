@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useAnimate } from "framer-motion";
@@ -24,7 +25,7 @@ const ShiftingCountdown = () => {
   );
 };
 
-const CountdownItem = ({ unit, text }) => {
+const CountdownItem = ({ unit, text }: any) => {
   const { ref, time } = useTimer(unit);
 
   return (
@@ -49,10 +50,10 @@ export default ShiftingCountdown;
 // NOTE: Framer motion exit animations can be a bit buggy when repeating
 // keys and tabbing between windows. Instead of using them, we've opted here
 // to build our own custom hook for handling the entrance and exit animations
-const useTimer = (unit) => {
+const useTimer = (unit: any) => {
   const [ref, animate] = useAnimate();
 
-  const intervalRef = useRef(null);
+  const intervalRef = useRef<any | null>(null);
   const timeRef = useRef(0);
 
   const [time, setTime] = useState(0);
