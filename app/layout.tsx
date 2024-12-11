@@ -2,14 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { LocalModal } from "@/components/pagesinfo/local";
-import { Butterfly_Kids } from "next/font/google";
 import { HaruoModal } from "@/components/pagesinfo/haruo";
 import { LanaModal } from "@/components/pagesinfo/lana";
 import { MusicModal } from "@/components/pagesinfo/musics";
+import localFont from "next/font/local";
 
-const butterfly_kids = Butterfly_Kids({
-  weight: "400",
-  subsets: ["latin"],
+// Font files can be colocated inside of `app`
+const atop = localFont({
+  src: "./fonts/Atop.ttf",
+  display: "swap",
+  variable: "--font-atop",
+});
+const shootingstar = localFont({
+  src: "./fonts/ShootingStar.ttf",
+  display: "swap",
+  variable: "--font-shooting-star",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${butterfly_kids.className} antialiased`}>
+      <body className={`${atop.variable} ${shootingstar.variable} antialiased`}>
         <LocalModal />
         <HaruoModal />
         <LanaModal />

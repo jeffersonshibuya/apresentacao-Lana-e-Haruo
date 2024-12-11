@@ -10,9 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        ballon: ["ballon", "sans-serif"],
-        atop: ["atop", "sans-serif"],
-        shootingStar: ["shootingStar", "sans-serif"],
+        atop: ["var(--font-atop)"],
+        shootingStar: ["var(--font---font-shooting-star)"],
       },
       colors: {
         background: "hsl(var(--background))",
