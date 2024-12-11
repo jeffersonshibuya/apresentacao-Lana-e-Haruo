@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="h-screen w-screen relative overflow-hidden">
-      {/* <AudioPlayer /> */}
+      <AudioPlayer />
       <Header />
       <div className="pb-8">
         <FloatingDockMenu />
