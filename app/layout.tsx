@@ -6,6 +6,7 @@ import { HaruoModal } from "@/components/pagesinfo/haruo";
 import { LanaModal } from "@/components/pagesinfo/lana";
 import { MusicModal } from "@/components/pagesinfo/musics";
 import localFont from "next/font/local";
+import { PixModal } from "@/components/pagesinfo/pix";
 
 // Font files can be colocated inside of `app`
 const atop = localFont({
@@ -36,6 +37,7 @@ export default function RootLayout({
         <HaruoModal />
         <LanaModal />
         <MusicModal />
+        <PixModal />
         {children}
       </body>
     </html>

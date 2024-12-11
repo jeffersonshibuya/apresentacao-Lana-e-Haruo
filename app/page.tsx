@@ -13,12 +13,13 @@ export default function Home() {
         <AudioPlayer />
         <Header />
 
-        <div className="absolute w-[150px] top-[140px] lg:top-[280px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40">
+        <div className="absolute w-[150px] lg:w-full top-[140px] lg:top-[280px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40">
           <iframe
             src="https://giphy.com/embed/VNNyo3QioK6re"
             width="100%"
             height="100%"
             allowFullScreen
+            style={{pointerEvents: 'none'}}
           ></iframe>
         </div>
         <div className="pb-8">

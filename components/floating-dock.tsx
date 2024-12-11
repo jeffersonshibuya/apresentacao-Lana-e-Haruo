@@ -6,6 +6,8 @@ import { Roboto } from "next/font/google";
 import { useHaruo } from "@/hooks/use-haruo";
 import { useLana } from "@/hooks/use-lana";
 import { useMusics } from "@/hooks/use-musics";
+import { usePix } from "@/hooks/use-pix";
+import { DollarSign } from "lucide-react";
 
 const roboto = Roboto({
   weight: "400",
@@ -17,6 +19,7 @@ export function FloatingDockMenu() {
   const { onOpen: openHaruo } = useHaruo();
   const { onOpen: openLana } = useLana();
   const { onOpen: openMusics } = useMusics();
+  const { onOpen: openPix } = usePix();
 
   const links = [
     {
@@ -40,19 +43,20 @@ export function FloatingDockMenu() {
       ),
       onOpenPage: openLana,
     },
-    // {
-    //   title: "Data e Horário",
-    //   icon: (
-    //     <IconCalendar className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //   ),
-    //   href: "#",
-    // },
+   
     {
       title: "Músicas",
       icon: (
         <IconMusic className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       onOpenPage: openMusics,
+    },
+    {
+      title: "Ingresso",
+      icon: (
+        <DollarSign className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      onOpenPage: openPix,
     },
     // {
     //   title: "Convidados",

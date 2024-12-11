@@ -26,6 +26,9 @@ export function Header() {
             <span className="text-7xl lg:text-9xl text-white/30">
               NOSSO PALCO
             </span>
+            <span className="text-5xl text-red-400 font-shootingStar">
+              R$ 20,00
+            </span>
           </p>
         </div>
       </BackgroundGradientAnimation>
