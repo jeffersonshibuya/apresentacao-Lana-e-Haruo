@@ -21,7 +21,7 @@ export function Header() {
         >
           <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 flex flex-col space-y-6">
             <span className="text-white/50  text-5xl lg:text-7xl">
-              Haruo e Lana aprentam:
+              Haruo e Lana apresentam:
             </span>
             <span className="text-7xl lg:text-9xl text-white/30">
               NOSSO PALCO
