@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         atop: ["var(--font-atop)"],
-        shootingStar: ["var(--font---font-shooting-star)"],
+        shootingStar: ["var(--font-shooting-star)"],
       },
       colors: {
         background: "hsl(var(--background))",

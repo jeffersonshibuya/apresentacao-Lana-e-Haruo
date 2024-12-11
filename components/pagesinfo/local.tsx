@@ -42,7 +42,7 @@ export const LocalModal = () => {
                 <MapIcon />
               </div>
               <div className="my-10 bg-gradient-to-r text-transparent from-pink-400  via-white to-green-400 bg-clip-text">
-                <h3 className=" text-center mb-2 text-4xl lg:text-7xl p-3">
+                <h3 className="text-center mb-2 text-4xl lg:text-7xl p-3">
                   LOCAL
                 </h3>
                 <div className="text-center mb-6 flex-col sapce-y-2">

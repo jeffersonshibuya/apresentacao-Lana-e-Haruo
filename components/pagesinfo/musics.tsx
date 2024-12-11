@@ -25,7 +25,7 @@ export const MusicModal = () => {
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "180deg" }}
             onClick={(e) => e.stopPropagation()}
-            className={`font-shootingStar bg-gradient-to-br from-violet-600/50 to-indigo-600 text-white p-6 rounded-lg w-full max-w-2xl shadow-xl cursor-default relative overflow-hidden`}
+            className={`font-shootingStar bg-gradient-to-br from-violet-600/50 to-indigo-600 text-white p-6 rounded-lg w-full max-w-3xl shadow-xl cursor-default relative overflow-hidden`}
           >
             <Music className="text-white/10 rotate-45 w-[250px] h-[250px] absolute z-50 -top-24 -left-24" />
             <Drum className="text-white/10 rotate-45 w-[250px] h-[250px] absolute z-50 -bottom-16 -right-14" />
@@ -41,7 +41,7 @@ export const MusicModal = () => {
                 <div className="text-center mb-6 flex-col sapce-y-2 ">
                   <ul className="lg:text-6xl text-2xl space-y-6 mt-12 flex flex-col items-start">
                     <li> - Macarena </li>
-                    <li> - Opaganastar </li>
+                    <li> - Oppa Gangnam style</li>
                     <li> - Mi Mi Mi </li>
                     <li> - Astronomia </li>
                     <li> - Minions </li>
