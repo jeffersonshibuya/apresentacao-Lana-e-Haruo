@@ -48,7 +48,8 @@ export const LocalModal = () => {
                 <div className="text-center mb-6 flex-col sapce-y-2">
                   <p className="flex flex-col text-4xl lgtext-6xl space-y-3 mt-12">
                     <span>Casa da Vovó </span> <br />
-                    <span>Palco Varanda</span>
+                    <span>Palco Varanda</span> <br />
+                    <span>Dia 25 de Dezembro às 17:00h</span> <br />
                   </p>
                 </div>
               </div>
