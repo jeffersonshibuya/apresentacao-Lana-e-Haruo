@@ -29,7 +29,7 @@ const CountdownItem = ({ unit, text }: any) => {
   const { ref, time } = useTimer(unit);
 
   return (
-    <div className="flex h-24 w-1/4 flex-col items-center justify-center gap-1 border-r-[1px] border-slate-200 font-mono md:h-36 md:gap-2">
+    <div className="flex h-18 w-1/4 flex-col items-center justify-center gap-1 border-r-[1px] border-slate-200 font-mono md:h-36 md:gap-2">
       <div className="relative w-full overflow-hidden text-center">
         <span
           ref={ref}
