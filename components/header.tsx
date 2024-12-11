@@ -13,7 +13,7 @@ export function Header() {
     <div className={`${butterfly_kids.className}`}>
       <BackgroundGradientAnimation>
         <span className="flex w-full items-center justify-center font-atop text-xl lg:text-4xl text-white/50">
-          Dia 25 de Dezembro 17:00h
+          Dia 25 de Dezembro 18:00h
         </span>
         <ShiftingCountdown />
         <div

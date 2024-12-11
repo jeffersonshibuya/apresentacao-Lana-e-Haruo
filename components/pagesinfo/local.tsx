@@ -24,7 +24,7 @@ export const LocalModal = () => {
           <motion.div
             initial={{ scale: 0, rotate: "180deg" }}
             animate={{ scale: 1, rotate: "0deg" }}
-            exit={{ scale: 0, rotate: "180deg" }}
+            exit={{ scale: 1, rotate: "180deg" }}
             onClick={(e) => e.stopPropagation()}
             className={`font-shootingStar bg-gradient-to-br from-violet-600 to-indigo-600 text-white p-6 rounded-lg w-full max-w-2xl shadow-xl cursor-default relative overflow-hidden`}
           >
@@ -49,7 +49,7 @@ export const LocalModal = () => {
                   <p className="flex flex-col text-4xl lgtext-6xl space-y-3 mt-12">
                     <span>Casa da Vovó </span> <br />
                     <span>Palco Varanda</span> <br />
-                    <span>Dia 25 de Dezembro às 17:00h</span> <br />
+                    <span>Dia 25 de Dezembro às 18:00h</span> <br />
                   </p>
                 </div>
               </div>
