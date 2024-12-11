@@ -1,8 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CircleDollarSign, DollarSign, Drum, HeadphonesIcon, Music } from "lucide-react";
-import { useMusics } from "@/hooks/use-musics";
+import { CircleDollarSign, DollarSign, Drum, HeadphonesIcon } from "lucide-react";
 import { usePix } from "@/hooks/use-pix";
 import Image from "next/image";
 // import Ballon from "next/font/local";
