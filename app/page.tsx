@@ -12,15 +12,6 @@ export default function Home() {
       <div className="h-screen w-screen relative overflow-hidden">
         <AudioPlayer />
         <Header />
-
-        <div className="absolute top-[200px] lg:top-[280px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40">
-          <iframe
-            src="https://giphy.com/embed/VNNyo3QioK6re"
-            width="100%"
-            height="100%"
-            allowFullScreen
-          ></iframe>
-        </div>
         <div className="pb-8">
           <FloatingDockMenu />
         </div>
